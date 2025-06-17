@@ -1,0 +1,328 @@
+* {
+  font-family: "Oswald", sans-serif;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+
+*****************************************************************************************************************************
+/* Hero section  */
+
+
+.herosection {
+  position: relative;
+  width: 100%;
+  height: 300px; /* Full screen height */
+  overflow: hidden;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.herosection img {
+  width: 100%;
+  height: 700px;
+  object-fit: cover; /* Ensures image covers the entire container */
+  display: block;
+  filter: brightness(0.7); /* Optional: darkens the image for better text contrast */
+
+}
+
+************************************************************************************************************
+
+/* Making product list */
+/* Making product list */
+.make-product-list {
+  width: 100%;
+  min-height: 400px;
+  padding: 40px 20px;
+  background-color: #fefefe;
+}
+
+.make-product {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.make-product-content {
+  text-align: center;
+}
+
+.header {
+  font-size: 32px;
+  color: brown;
+  margin-bottom: 20px;
+}
+
+.list-dishes {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+  font-size: 18px;
+  color: black;
+}
+
+.images-make-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding: 20px;
+}
+
+.images-make-section img {
+  width: 230px;
+  height: 200px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.images-make-section img:hover {
+  transform: scale(1.05);
+}
+
+
+/* delivery book panel section */
+
+
+.delivery-book-panel {
+  margin-top: 25px;
+  margin-left: 18%;
+  width: 65%;
+  height: 400px; /* fixed height for horizontal layout */
+  background-color: burlywood;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 40px;
+  overflow: hidden;
+  flex-wrap: nowrap;
+  border-radius: 10px; /* optional for rounded panel */
+}
+
+.book-panel-left img {
+  width: 100%;
+  max-width: 500px;  /* ⬅️ smaller max width */
+  height: 100%;
+  max-height: 100%;  /* ✅ prevent overflow */
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* optional: smooth shadow */
+}
+
+
+.book-panel-left img {
+  width: 100%;
+  max-width: 500px;  /* ⬅️ smaller max width */
+  height: 100%;
+  max-height: 100%;  /* ✅ prevent overflow */
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* optional: smooth shadow */
+}
+
+.book-panel-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 50%;
+  height: 100%; /* ✅ Match panel height */
+}
+
+.book-title {
+  color: black;
+  font-size: 29px;
+  margin-bottom: 10px;
+}
+
+.book-delivery-section p {
+  color: black;
+  font-size: 17px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.book-form button {
+  color: #fefefe;
+  background-color: orangered;
+  font-size: 14px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.book-form button:hover {
+  background-color: darkred;
+}
+
+
+/* booking form  */
+.book-food-container {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+.book-food-container h2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+
+}
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.booking-form input,
+.booking-form textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.city-pincode {
+  display: flex;
+  gap: 10px;
+}
+
+.city-pincode input {
+  flex: 1;
+}
+
+.food-selection label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.payment-method label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+button {
+  padding: 12px;
+  background-color: #28a745;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+
+
+/* ABout section */
+.about-section {
+  padding: 60px 20px;
+  background-color: #fff0f5; /* Light pink */
+  text-align: center;
+  color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.about-section h1 {
+  font-size: 36px;
+  color: #c2185b; /* A deep pink color */
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  font-size: 18px;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+
+
+
+/* contact from section */
+.contact-info {
+  display: flex;
+  gap: 40px;
+  padding: 40px;
+  width: 100%;
+  background-color: #f2f2f2;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.company-contact {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+  background-color: #d8d8d8;
+  color: #121212;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+
+.company-contact h1 {
+  font-size: 28px;
+  color: #c2185b;
+  margin-bottom: 20px;
+}
+
+.company-contact p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  background-color:  #ff5e62;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #a3154b;
+}

@@ -1,0 +1,105 @@
+/* General styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f7fa;
+  margin: 0;
+  padding: 0;
+}
+
+.order-detail,
+.delivery-boy-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+}
+
+/* Order Cards */
+.order-card,
+.boy-card {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  background: #fdfdfd;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.order-card:hover,
+.boy-card:hover {
+  transform: scale(1.02);
+}
+
+.order-image,
+.delivery-boy-img {
+  width: 180px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 1rem;
+  column-gap: 2rem;
+  width: 100%;
+}
+
+.label {
+  font-weight: 600;
+  color: #555;
+}
+
+.value {
+  display: block;
+  font-weight: 500;
+  color: #333;
+  margin-top: 4px;
+}
+
+/* Status Styling */
+.value.delivered {
+  color: green;
+  font-weight: bold;
+}
+
+.value.pending {
+  color: orange;
+  font-weight: bold;
+}
+
+.value.cancelled {
+  color: red;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .order-card,
+  .boy-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .order-image,
+  .delivery-boy-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+}

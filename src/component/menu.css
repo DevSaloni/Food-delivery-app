@@ -1,0 +1,42 @@
+/* App.css */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.menu-name{
+    text-align: center;
+    font-size: 40px;
+    color: crimson;
+    padding-top: 25px;
+    border-bottom: 3px solid crimson;
+    padding-bottom: 20px;
+}
+.menu-item {
+  border: 1px solid #ccc;
+  padding: 15px;
+  text-align: center;
+  background: #fff;
+}
+
+.menu-item img {
+  height:200px;
+  width:220px
+}
+.buttons {
+  margin: 20px;
+  text-align: center;
+}
+
+.buttons button {
+  margin: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button.active {
+  background-color: crimson;
+  color: white;
+}

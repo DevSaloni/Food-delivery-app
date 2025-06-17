@@ -1,0 +1,167 @@
+/* General container */
+.searchpage {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Sidebar (left) */
+.menu-card-sidebar {
+  width: 350px;
+  padding: 20px;
+  background-color: #1f1f1f;
+  color:black;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+/* Right section (search + results) */
+.right-section {
+  flex: 1;
+  padding: 30px;
+}
+
+/* Search bar area */
+.search-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  margin-bottom: 30px;
+}
+
+.search-section input,
+.search-section select {
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 500px;
+  background-color: #fff;
+}
+
+.search-section button {
+  background-color: #ff6b6b;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-section button:hover {
+  background-color: #e84141;
+}
+
+/* Food display grid */
+.show-food {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* FoodCard styling */
+.food-card {
+  width: 250px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.food-card:hover {
+  transform: scale(1.02);
+}
+
+.food-list img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+
+.food-info {
+  padding: 15px;
+}
+
+.dish-name {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  text-transform: capitalize;
+}
+
+.food-des p {
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+.btn {
+  padding: 15px;
+  text-align: center;
+}
+
+.btn button {
+  background-color: #00c851;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn button:hover {
+  background-color: #007e33;
+}
+
+/* Menu card styles */
+.menu-card {
+  padding: 20px;
+  background-color: #1f1f1f;
+  color: black;
+  border-radius: 12px;
+  width: 100%;
+}
+
+.menu-title {
+  text-align: center;
+  color: crimson;
+  font-size: 24px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #444;
+  padding-bottom: 10px;
+}
+
+.menu-item {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #2a2a2a;
+  border-radius: 10px;
+}
+
+.menu-item h3 {
+  text-align: center;
+  color: hotpink;
+  margin-bottom: 10px;
+}
+
+.menu-list .menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 10px;
+  border-bottom: 1px solid #444;
+}
+
+.menu-list .menu:last-child {
+  border-bottom: none;
+}
+
+.menu p {
+  margin: 0;
+  font-size: 16px;
+  color: black;
+}
